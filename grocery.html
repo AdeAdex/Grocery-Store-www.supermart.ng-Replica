@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="pic/download.png">
+    <link href="fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="grocery.css">
+	<title>Grocery Supermarket</title>
+</head>
+<body>
+		<!--<div id="sidebarContainer">
+  					<i onclick="myFunction(this)" class="fas fa-bars"><h2>Categories</h2></i>
+					<div id="myDropdown" class="drop-down-content">
+		  				<button class="tablinks" onclick="openCity(event, 'detailsContainer')" id="defaultOpen">fresh food</button>
+		  				<button class="tablinks" onclick="openCity(event, 'detailsContainer2')">drinks</button>
+		  				<button class="tablinks" onclick="openCity(event, 'detailsContainer3')">naija food</button>
+		  				<button class="tablinks" onclick="openCity(event, 'detailsContainer4')">snacks</button>
+		  				<button class="tablinks" onclick="openCity(event, 'detailsContainer5')">food cupboard</button>
+		  				<button class="tablinks" onclick="openCity(event, 'detailsContainer6')">oil & sauces</button>
+		  				<button class="tablinks" onclick="openCity(event, 'detailsContainer7')">household</button>
+		  				<button class="tablinks" onclick="openCity(event, 'detailsContainer8')">toiletries</button>
+		  				<button class="tablinks" onclick="openCity(event, 'detailsContainer9')">health & wellness</button>
+		  				<button class="tablinks" onclick="openCity(event, 'detailsContainer10')">kitchen & dining</button>
+		  				<button class="tablinks" onclick="openCity(event, 'detailsContainer11')">electronics</button>
+		  				<button class="tablinks" onclick="openCity(event, 'detailsContainer12')">baby & kids</button>
+	  				</div>
+			</div>!-->	
+		<div class="topnav" id="myTopnav">
+            <div class="nav-container">
+            	<div class="nav-1">
+            		<div class="nav-1-1"><i class="fas fa-envelope"></i>adeoluamole@gmail.com</div>
+            		<div class="nav-1-2"><i class="fas fa-location-dot"></i><button>Change Area</button></div>
+            		<div class="nav-1-3"><i class="fas fa-truck"></i>we deliver 7 days a week</div>
+            	</div>
+            	<div class="nav-3">
+                	<div class="image">
+						<img src="pic\download.png">
+					</div>
+
+					<div class="container">
+  						<input id="search" type="text" placeholder="Search..."/>
+						  <ul class="list">
+						    <li>a</li>
+						    <li>ability</li>
+						    <li>able</li>
+						    <li>about</li>
+						    <li>above</li>
+						    <li>accept</li>
+						    <li>according</li>
+						    <li>account</li>
+						    <li>across</li>
+						    <li>act</li>
+						    <li>action</li>
+						    <li>activity</li>
+						    <li>actually</li>
+						    <li>adex</li>
+						    <li>address</li>
+						    <li>administration</li>
+						    <li>admit</li>
+						    <li>adult</li>
+						    <li>affect</li>
+						    <li>after</li>
+						    <li>again</li>
+  						</ul>
+					</div>
+
+					<div class="user">
+						<div class="user-list1"><div class="user-list1-icon"><i class="fas fa-heart"></i><div id="fav">0</div></div><span>my favourite</span></div>
+						<div class="user-list2"><div class="user-list2-icon"><i class="fas fa-basket-shopping"></i><div id="basket">0</div></div><span>my basket</span></div>
+						<div class="user-list3"><i class="fas fa-user"></i><span>login/register </span></div>
+					</div>
+
+                </div>
+            	
+
+            </div>
+
+        
+
+
+		<div id="navbar">
+			<a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="dropDown()">&#9776; <span class="icon-txt">categories</span></a>
+		  <div class="navbar-row1">
+	                    
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="active">new addition 
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content" id="myDropdown">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+ 
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">fresh food
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content" id="myDropdown">
+	                            <a href="#">fruits</a>
+	                            <a href="#">vegetable</a>
+	                            <a href="#">meat & poultry</a>
+	                            <a href="#">sea food</a>
+	                            <a href="#">bread</a>
+	                            <a href="#">cheese</a>
+	                            <a href="#">sausages</a>
+	                            <a href="#">bacon & cold cuts</a>
+	                            <a href="#">eggs</a>
+	                            <a href="grocery-sub-category-yoghurt.html">youghurt & desserts</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">naija food
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content" id="myDropdown">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">food cupboard
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">oil & sauces
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">alcohol
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">household
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">toiletries
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">health & wellness
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn"> lagos market
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div>
+					
+            </div>
+
+            <div class="navbar-row2">
+
+	            		<div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">electronics 
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">frozen
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">ikeja market
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">snacks
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">kitchen & dinning
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">drinks
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">cleaning
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">baby & kids
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">office supplies
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div> 
+
+	                    <div class="dropdown">
+	                        <button class="dropbtn" id="dropBtn">others
+	                            <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+	                        </button>
+	                        <div class="dropdown-content">
+	                            <a href="#">download our app</a>
+	                            <a href="#">account</a>
+	                            <a href="#">help</a>
+	                        </div>
+	                    </div>       
+	          
+					
+            </div>
+            
+		</div>
+		</div>
+
+
+
+		<div id="adsArea">
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+				  <img src="pic\slide00.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="pic\slide01.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="pic\slide3.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="pic\slide2.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="pic\slide1.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="pic\slide02.png" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="pic\slide03.png" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="pic\slide04.png" style="width:100%">
+				</div>
+
+				<br>
+
+				<div style="text-align:center">
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				</div>
+
+			</div>
+				
+				
+			<div id="ads">
+				<div id="ads1"><img src="pic\banner3.jpg"></div>
+				<div id="ads2"><img src="pic\banner5.jpg"></div>
+			</div>
+
+		</div>
+
+
+
+			<div id="right">
+				<div class="row-one">
+					<div id="detailsContainer" class="tabcontent">
+						<div class="row-one-h"><h4>all/feature product</h4><h5>view more>></h5></div>
+							<div class="all-product">
+								<a href=""><img src="pic\fresh food.jpeg"></a>
+								<a href="grocery-sub-category-snacks.html"><img src="pic\snacks.jpeg"></a>
+								<a href=""><img src="pic\naija ingredient.jpeg"></a>
+								<a href="grocery-sub-category-toiletries.html"><img src="pic\toiletries.jpeg"></a>
+							</div>
+
+							<div class="all-product">
+								<a href=""><img src="pic\drinks.jpeg"></a>
+								<a href=""><img src="pic\everyday essentials.jpeg"></a>
+								<a href=""><img src="pic\milo.jfif"></a>
+								<a href=""><img src="pic\drink3.jpg"></a>
+							</div>
+
+
+							<a class="prev" onclick="plusSlides2(-1)">❮</a>
+							<a class="next" onclick="plusSlides2(1)">❯</a>
+					</div>		
+				</div>
+
+
+
+
+
+
+
+
+
+				<div class="row-two">
+					<div id="detailsContainer" class="">
+						<div class="row-two-h"><h4>naija ingredient</h4><h5>view more>></h5></div>
+							<div class="naija-ingredient">
+								<div class="pro-details">
+									<img src="pic\naija ingredient1.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\naija ingredient2.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\naija ingredient3.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\naija ingredient4.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\naija ingredient5.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\naija ingredient6.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+							</div>
+
+					</div>
+				</div>
+
+
+				
+				<div class="row-three">
+					<div id="detailsContainer" class="">
+						<div class="row-three-h"><h4>food cupboard</h4><h5>view more>></h5></div>
+							<div class="others">
+								<div class="pro-details">
+									<img src="pic\snacks1.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\food cupboard1.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\food cupboard2.png">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\food cupboard3.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\food cupboard4.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\food cupboard5.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+							</div>
+					</div>
+				</div>
+
+				<div class="ads3">
+					<img src="pic\ads7.jpeg">
+				</div>
+
+				<div class="row-three">
+					<div id="detailsContainer" class="">
+						<div class="row-three-h"><h4>fresh food</h4><h5>view more>></h5></div>
+							<div class="others">
+								<div class="pro-details">
+									<img src="pic\fresh food3.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\fresh food1.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\fresh food6.png">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\fresh food2.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\fresh food5.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\fresh food4.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+							</div>
+					</div>
+				</div>
+
+				<div class="row-three">
+					<div id="detailsContainer" class="">
+						<div class="row-three-h"><h4>toiletries</h4><h5>view more>></h5></div>
+							<div class="others">
+								<div class="pro-details">
+									<img src="pic\toiletries6.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\toiletries1.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\toiletries2.png">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\toiletries3.png">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\toiletries4.jpeg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\toiletries5.png">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart" onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+							</div>
+					</div>
+				</div>
+
+
+				<div class="ads3">
+					<img src="pic\ads8.png">
+				</div>
+
+
+				<div class="row-three">
+					<div id="detailsContainer" class="">
+						<div class="row-three-h"><h4>electronics</h4><h5>view more>></h5></div>
+							<div class="others">
+								<div class="pro-details">
+									<img src="pic\electronic1.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\electronic2.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\electronic3.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\electronic4.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\electronic5.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\electronic6.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+							</div>
+					</div>
+				</div>
+
+
+				<div class="row-three">
+					<div id="detailsContainer" class="">
+						<div class="row-three-h"><h4>drinks</h4><h5>view more>></h5></div>
+							<div class="others">
+								<div class="pro-details">
+									<img src="pic\drink2.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\drink1.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\drink4.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\drink6.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\drink5.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+								<div class="pro-details">
+									<img src="pic\drink3.jpg">
+									<div class="pro-name"><div class="name"><a href=""> Saw fish</a></div> <div class="price">$100<i class="fas fa-heart"onclick="addFav()"></i></div></div>
+									<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+								</div>
+							</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="partner">
+						<h3>trusted partner</h3>
+						<div class="partner-row">
+							<div class="partner-list">
+								<img src="pic\logo-chi.png">
+								<img src="pic\logo-belimpex.png">
+								<img src="pic\logo-medplus.png">
+								<img src="pic\logo-nestle.png">
+							</div>
+							<div class="partner-list">
+								<img src="pic\logo-nivea.png">
+								<img src="pic\logo-officerus.png">
+								<img src="pic\logo-reckitt.png">
+								<img src="pic\logo-spar.png">
+							</div>
+							<div class="partner-list">
+								<img src="pic\logo-unilever.png">
+								<img src="pic\logo-redbull.png">
+								<img src="pic\logo-hayat.png">
+								<img src="pic\logo-zartech.png">
+							</div>
+						</div>
+			</div>
+
+
+			<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      <h4>Grocery.ng is the leading online supermarket and grocery delivery service in Nigeria. Order online from over 10,000 groceries and receive same-day delivery. Visit your favorite online food store, Supermart.ng, for the best online same-day delivery shopping in Nigeria. On Supermart.ng, you can buy groceries online and get the best food shopping offers compared to any other online supermarket in Nigeria. This online grocery store in Lagos is great for grocery shopping and home delivery service. Online grocery shopping should be easy and that’s what we do best at grocery.ng – we ensure that in our online supermarket in Lagos, you not only get great food shopping online offers, supermarket delivery but also the kind of excellent service you expect in an online food store. Shop here to get the best prices discounts on food, beverages, and household products when you do your online grocery shopping in Lagos or from anywhere in Nigeria.<span id="dots">...</span><span id="more"><p></p><br>
+
+				  When you’re considering delivery services in Lagos, grocery.ng should be top of the list of food delivery companies – we deliver to all locations from Victoria Island to Surulere. When you order online, you get the grocery direct to your door no matter the length of your list of provision items. We are a proudly Nigerian grocery store that is at the top of the list of shopping sites in Nigeria. If you love your local Nigerian ingredients but don’t want the stress of going to markets, you can trust this online market in Nigeria with your provision shopping and food shopping list. We cater to all kinds of customers including those interested in wholesale groceries and buying in bulk for their homes or offices. We serve customers who treasure their time which is why we offer same day delivery in Lagos in all locations including Lekki, Ajah, Ikeja, Yaba, and other central parts of the state. Online shopping should be easy which is why we make our website and online shopping app user friendly.<p></p><br>
+
+				   Grocery.ng is one of the best online shopping sites in Nigeria. Based on the number of products we sell, we are the biggest online supermarket in Lagos, Nigeria. For those who are price conscious, you will also find it is one of the cheapest online stores where the cost of food is very affordable and caters to all budgets. Our wide selection of groceries includes product categories like fruits, vegetables, meat, chicken, fish, toiletries, beauty products, cosmetics, cleaning products, snacks, drinks, alcohol, canned goods, medicines, books, office supplies, and lots more. Because we have the largest assortment of groceries in Nigeria, you'll be sure to find everyday essentials like bread, eggs, tea, cooking oil, sardines, garri, yam, carrots, apples, avocado, cornflakes, noodles, tea, coffee, soft drinks, juice, soap, deodorants, toothpaste, bleach, air fresheners, diapers, hand wash, toilet tissue, pens, printing paper and so much more.<p></p><br>
+
+					Grocery.ng is the only grocery supermarket where you can fulfill your entire shopping basket without having to drive to various stores and that's because we have all the leading brands like Coke, Fanta, Nescafe, Indomie, Power Oil, Ola Ola, Honeywell, Indomie, Peak, Golden Morn, Heinz, Milo, Lipton, Jik, Hypo, Ariel, Kellogg's, Nutzy, De Rica, Mamador, Gulder, Heineken, Orijin, Chivita, Dano, Oldenburger, Hollandia, Boulos, Nivea, Vaseline, Colgate, Pringles, McVities, Air Wick, Dettol. We're a one-stop shop near you, your very own grocery list app; it doesn't matter what part of your home you're thinking of, we've got the products for your kitchen, living room, bathroom, bedroom, and even the office.</span></p>
+					<button onclick="myFunction2()" id="myBtn">Read more</button>
+				</h4>
+			    </div>
+			    <div class="flip-box-back">
+			      <h2></h2>
+			    </div>
+			  </div>
+			</div>
+
+
+
+		
+
+	<footer>
+		<div class="footer-row-1">
+			<img src="pic\ads8.png">
+		</div>
+		<div class="footer-row-2">
+			<div class="footer-col-1">col1</div>		
+			<div class="footer-col-2">col2</div>		
+			<div class="footer-col-3">col3</div>		
+			<div class="footer-col-4">col4</div>		
+			<div class="footer-col-5">col5</div>
+		</div>
+		<div class="footer-row-3"></div>		
+	</footer>
+
+<script type="text/javascript" src="grocery.js"></script>
+</body>
+</html>
