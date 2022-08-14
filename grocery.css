@@ -434,6 +434,7 @@ li:hover{
     background-color: midnightblue;
     margin: auto;
     height: 42px;
+    position: absolute;
   }
 
   .nav-1-2 .fas {
