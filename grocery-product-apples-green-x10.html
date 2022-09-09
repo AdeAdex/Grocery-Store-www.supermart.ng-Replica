@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="pic/download.png">
+    <link href="fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="grocery.css">
+	<title>Adex Supermarket</title>
+</head>
+<body>
+
+		<div class="topnav" id="myTopnav">
+            <div class="nav-container">
+                <div class="nav-1" id="nav1">
+                    <div id="alert">
+                        <span class="closebtn2" onclick="rmv()">&times;</span> 
+                        <strong>Alert!</strong><br> Install Adex Supermarket app <a href="https://play.google.com/store"><button>Install</button></a>
+                        <div class="nav-1-1-1"><i class="fas fa-envelope"></i>adeoluamole@gmail.com</div>
+                        <div class="nav-1-3-3"><i class="fas fa-truck"></i>we deliver 7 days a week</div>
+                    </div>
+                    <div id="under">
+                        <div class="nav-1-1"><i class="fas fa-envelope"></i>adeoluamole@gmail.com</div>
+                        <div class="nav-1-2">
+                        <div class="your-select">
+                            <div class="your-area" id="yourArea"><i class="fas fa-location-dot"></i>selected area:<span id="choosed">lekki</span></div>
+                            <button onclick="changeArea()" class="dropbtn-area"><i class="fas fa-location-dot"></i><span>Change Area</span></button>
+                        </div>
+                        <div id="myDropdownArea" class="dropdown-content-area">
+                            <div class="your-area2" id="yourArea2"><i class="fas fa-location-dot"></i>selected area:<span id="choosed2">lekki</span></div>
+                            <h4>select a delivery area</h4>
+                            <div class="tooltip-div">
+                                <button class="tooltip"><a href="#home" onclick="pasteIt()" id="preSelect">victoria island, ikoyi & lagos island</a><span class="tooltiptext">ikoyi, lagos island, oniru estate, victoria island</span></button><i class="fas fa-check-circle" id="faCheck"></i>
+                            </div>
+
+                            <div class="tooltip-div">
+                                <button class="tooltip"><a href="#home" onclick="pasteIt2()" id="preSelects">lekki</a><span class="tooltiptext">Agungi-Osapa, Ajah, Chevron, Elf-Nicon, Ikate, Ikota, Lekki Phase 1, VGC</span></button>
+                            </div>
+
+                            <div class="tooltip-div">
+                                <button class="tooltip"><a href="#home">lagos mainland</a><span class="tooltiptext">Alausa-Oregun, Anthony Village, Gbagada, Ikeja, Ilupeju, Ketu, Magodo, Maryland, Mushin, Ogudu-Ojota, Omole-Ojodu Berger, Oshodi, Somolu, Surulere, Yaba, Bariga</span></button>
+                            </div>
+
+                            <div class="tooltip-div">
+                                <button class="tooltip"><a href="#home">isolo axis</a><span class="tooltiptext">Isolo, Okota, Ejigbo, Ajao Estate, Ilasamaja, Mafoluku, Isagatedo</span></button>
+                            </div>
+
+                            <div class="tooltip-div">
+                                <button class="tooltip"><a href="#home">agege axis</a><span class="tooltiptext">Agege, Iju, Ogba</span></button>
+                            </div>
+
+                            <div class="tooltip-div">
+                                <button class="tooltip"><a href="#home">alimosho axis</a><span class="tooltiptext">Abule Egba, Idimu, Igando, Ikotun, Iyana Ipaja, Akowonjo, Egbeda</span></button>
+                            </div>
+
+                            <div class="tooltip-div">
+                                <button class="tooltip"><a href="#home">apapa axis</a><span class="tooltiptext">Apapa, Ijora, Ajegunle, Badia</span></button>
+                            </div>
+
+                            <div class="tooltip-div">
+                                <button class="tooltip"><a href="#home">festac axis</a><span class="tooltiptext">Festac, Orile, Mile 2</span></button>
+                            </div>
+
+                            <div class="tooltip-div">
+                                <button class="tooltip"><a href="#home">ikorodu (up to garage)</a><span class="tooltiptext">ikoyi, lagos island, oniru estate, victoria island</span></button>
+                            </div>
+
+                            <div class="tooltip-div">
+                                <button class="tooltip"><a href="#home">lekki (outskirts)</a><span class="tooltiptext">Ikorodu</span></button>
+                            </div>
+
+                            <div class="tooltip-div">
+                                <button class="tooltip"><a href="#home">ikeja axis</a><span class="tooltiptext">Ikeja</span></button>
+                            </div>
+
+                            <button id="submit" type="submit" onclick="myShow()">continue</button>
+                            <div id="trick"></div>
+                         </div>
+                        </div>
+                        <div class="nav-1-3"><i class="fas fa-truck"></i>we deliver 7 days a week</div>
+                    </div>
+                </div>
+                <div class="nav-3">
+                    <div class="image">
+                        <a href="grocery.html"><img src="pic\ade.png"></a>
+                    </div>
+
+                    <div class="container">
+                        <input id="search" type="text" placeholder="Search..."/>
+                          <ul class="list">
+                            <li>a</li>
+                            <li>ability</li>
+                            <li>able</li>
+                            <li>about</li>
+                            <li>above</li>
+                            <li>accept</li>
+                            <li>according</li>
+                            <li>account</li>
+                            <li>across</li>
+                            <li>act</li>
+                            <li>action</li>
+                            <li>activity</li>
+                            <li>actually</li>
+                            <li>adex</li>
+                            <li>address</li>
+                            <li>administration</li>
+                            <li>admit</li>
+                            <li>adult</li>
+                            <li>affect</li>
+                            <li>after</li>
+                            <li>again</li>
+                        </ul>
+                    </div>
+
+                    <div class="user">
+                        <div class="user-list1">
+                            <div class="user-list1-icon"><i class="fas fa-heart"></i><div id="fav">0</div></div>
+                            <span>my favourite</span>
+                        </div>
+                        <div class="user-2">
+                            <div class="dropdiv" onclick="myBasket()">
+                                <div class="user-list2">
+                                    <div class="user-list2-icon"><i class="fas fa-basket-shopping"></i><div id="basket">0</div></div>
+                                    <span>my basket</span>
+                                </div>
+                                <div class="amount">₦<div id="totalAmount">0</div></div>
+                            </div>
+                            <div id="myDropdownBasket" class="dropdown-content-basket">
+                                <div class="your-basket-head">
+                                    <div><h4>Your Basket</h4>
+                                        <p>1 Items</p>
+                                    </div>
+                                    <div class="your-basket-total-price">
+                                        <h4>₦1200</h4>
+                                    </div>
+                                </div>
+
+                                <div class="your-basket-content" id="basketContent">
+                                    <p id="p"></p>
+                                </div>
+
+                                <div class="your-basket-buttons">
+                                    <button class="button1" onclick="generate()">continue shooping</button>
+                                    <a href="profile.html"><button class="button2">checkout</button></a>                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-list3">
+                            <i class="fas fa-user"></i>
+                            <span><a href="login.html">login</a> / <a href="registration.html">register</a> </span>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+        
+
+
+        <div id="navbar">
+            <a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="dropDown()">&#9776; <span class="icon-txt">categories</span></a>
+          <div class="navbar-row1">
+                        
+                        <div class="dropdown">
+                            <button class="dropbtn" id="active"><span>new addition</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content" id="myDropdown">
+                                <a href="#">new addition</a>
+                            </div>
+                        </div> 
+ 
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>fresh food</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content" id="myDropdown">
+                                <a href="#">fruits</a>
+                                <a href="#">vegetable</a>
+                                <a href="#">meat & poultry</a>
+                                <a href="#">sea food</a>
+                                <a href="#">bread</a>
+                                <a href="#">cheese</a>
+                                <a href="#">sausages</a>
+                                <a href="#">bacon & cold cuts</a>
+                                <a href="#">eggs</a>
+                                <a href="grocery-sub-category-yoghurt.html">youghurt & desserts</a>
+                            </div>
+                        </div> 
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>naija food</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content" id="myDropdown">
+                                <a href="#">naija ingredients</a>
+                                <a href="#">naija meat, poutry & sea food</a>
+                                <a href="grocery-sub-category-snacks.html">naija snacks</a>
+                                <a href="#">naija meat, poutry & sea food</a>
+                            </div>
+                        </div> 
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>food cupboard</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="grocery-product-indomie-instant-noodles-chicken.html">rice, pasta & noodles</a>
+                                <a href="#">swallow</a>
+                                <a href="#">canned fish & meat</a>
+                                <a href="#">canned beans & peas</a>
+                                <a href="#">canned fruit & vegetable</a>
+                                <a href="#">breakfast cereals</a>
+                                <a href="#">jams & spreads</a>
+                                <a href="#">salt & spices</a>
+                                <a href="#">sugar & sweeteners</a>
+                                <a href="#">beans, seeds & grains</a>
+                                <a href="#">cake, bake, pancake</a>
+                                <a href="#">custard & jelly</a>
+                                <a href="#">coconut milk</a>
+                                <a href="#">olives & pickles</a>
+                            </div>
+                        </div> 
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>oil & sauces</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">groundnut & vegetable oil</a>
+                                <a href="#">palm oil</a>
+                                <a href="#">soya & sunflower oil</a>
+                                <a href="#">olive oil</a>
+                                <a href="#">corn & canola oil</a>
+                                <a href="#">tinned tomatoes</a>
+                                <a href="#">tomato pasta</a>
+                                <a href="#">cooking sauces</a>
+                                <a href="#">vinegar</a>
+                                <a href="#">salad dressing</a>
+                                <a href="#">table sauces</a>
+                                <a href="#">cooking & whipping cream</a>
+                            </div>
+                        </div> 
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>alcohol</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">beer, stout & cider</a>
+                                <a href="#">bitters & herbal drinks</a>
+                                <a href="#">red wine</a>
+                                <a href="#">white wine</a>
+                                <a href="#">rose wine</a>
+                                <a href="#">sparkling wine</a>
+                                <a href="#">champagne</a>
+                                <a href="#">brandy, cognac, whisky</a>
+                                <a href="#">gin & vodka</a>
+                                <a href="#">rum</a>
+                                <a href="#">alcopos</a>
+                            </div>
+                        </div> 
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>household</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">toilet tissue</a>
+                                <a href="#">facial tissue</a>
+                                <a href="#">hand wash & sanitisers</a>
+                                <a href="#">insecticides & rat traps</a>
+                                <a href="#">air freshners & fragrances</a>
+                                <a href="#">batteries & light bulbs</a>
+                                <a href="#">shoe polish</a>
+                                <a href="#">waste bins & bin bags</a>
+                                <a href="#">pets</a>
+                                <a href="#">home decor</a>
+                                <a href="#">car care</a>
+                                <a href="#">lamps & touchlights</a>
+                                <a href="#">laundry</a>
+                            </div>
+                        </div> 
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>toiletries</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="grocery-sub-category-toiletries.html">bath time</a>
+                                <a href="#">deodorant & body sprays</a>
+                                <a href="#">moisturisers & lotions</a>
+                                <a href="#">oral care</a>
+                                <a href="#">facial care</a>
+                                <a href="#">women's shaving & hair removal</a>
+                                <a href="#">hair care</a>
+                                <a href="#">make up & beauty</a>
+                                <a href="#">men's zone</a>
+                                <a href="#">feminine care</a>
+                                <a href="#">men's shaving</a>
+                                <a href="#">hair clippers, dryers, trimmers</a>
+                                <a href="#">feet care</a>
+                                <a href="#">cotton wool & buds</a>
+                                <a href="#">powder</a>
+                                <a href="#">perfumes for womwne</a>
+                                <a href="#">colognes for men</a>
+                                <a href="#">skin tone</a>
+                            </div>
+                        </div> 
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>health & wellness</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">headaches & pain</a>
+                                <a href="#">coughing & sneezing</a>
+                                <a href="#">stomach & bowel</a>
+                                <a href="#">allergy & infections</a>
+                                <a href="#">diet & weight loss</a>
+                                <a href="#">contraception & sexual pleasure</a>
+                                <a href="#">conception & pregnancy</a>
+                                <a href="#">sleep aids</a>
+                                <a href="#">eye & ear care</a>
+                                <a href="#">vitamins & supplements</a>
+                                <a href="#">heart & blood</a>
+                                <a href="#">first aid & test kits</a>
+                                <a href="#">covid care</a>
+
+                            </div>
+                        </div> 
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>lagos market</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">ikeja market</a>
+                                <a href="#">oshodi market</a>
+                                <a href="#">lekki - Ajah market</a>
+                                <a href="#">ikoyi market</a>
+                                <a href="#">magodo market</a>
+                                <a href="#">yaba - mainland market</a>
+                            </div>
+                        </div>
+                    
+            <!--</div>
+
+            <div class="navbar-row2">!-->
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>electronics</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">washing machines</a>
+                                <a href="#">ups, stabilizers & inverters</a>
+                                <a href="#">tvs & home thearter</a>
+                                <a href="#">toasters</a>
+                                <a href="#">microwave ovens</a>
+                                <a href="#">generators</a>
+                                <a href="#">computers</a>
+                                <a href="#">flash drives & sd cards</a>
+                                <a href="#">air conditioners & fans</a>
+                                <a href="#">earphones & speakers</a>
+                                <a href="#">kettles</a>
+                                <a href="grocery-sub-category-electronics-fridges-freezers.html">fridges & freezers</a>
+                                <a href="#">cable & accessories</a>
+                                <a href="#">video games</a>
+                                <a href="#">water dispensers</a>
+                                <a href="#">printers</a>
+                                <a href="#">cookers & grills</a>
+                                <a href="#">flash drives & sd cards</a>
+                                <a href="#">water heater</a>
+                                <a href="#">fryers & rice cookers</a>
+                                <a href="#">blenders & food processors</a>
+                                <a href="#">coffee makers</a>
+                            </div>
+                        </div> 
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>frozen</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">butter & margarine</a>
+                                <a href="#">chips</a>
+                                <a href="#">ice cream</a>
+                                <a href="#">mixed vegetable</a>
+                                <a href="#">ready meals</a>
+                            </div>
+                        </div> 
+
+                        <!--<div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>ikeja market</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">buy in bulk</a>
+                            </div>
+                        </div> !-->
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>snacks</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="grocery-sub-category-snacks.html">biscuits & wafers</a>
+                                <a href="#">chocolates</a>
+                                <a href="#">nuts & dried fruits</a>
+                                <a href="#">potato & plantain chips</a>
+                                <a href="#">popcorn</a>
+                                <a href="#">sweets & chewing gum</a>
+                            </div>
+                        </div> 
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>kitchen & dinning</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">kitchen towels & serviettes</a>
+                                <a href="#">freezer & sandwich bags</a>
+                                <a href="#">food containers</a>
+                                <a href="#">take away packs</a>
+                                <a href="#">disposable plates & cutlery</a>
+                                <a href="#">drinking glasses</a>
+                                <a href="#">kitchen utensils</a>
+                            </div>
+                        </div> 
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>drinks</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">water</a>
+                                <a href="#">milk</a>
+                                <a href="#">food drinks</a>
+                                <a href="#">tea</a>
+                                <a href="#">coffee</a>
+                                <a href="#">fruit juice & flavoured drinks</a>
+                                <a href="#">soft drinks</a>
+                                <a href="grocery-sub-category-yoghurt.html">milk & yoghurts drinks</a>
+                                <a href="#">non-alcoholic wine</a>
+                            </div>
+                        </div> 
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>cleaning</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">dish & kitchen cleaners</a>
+                                <a href="#">bathroom & toilet cleaners</a>
+                                <a href="#">surface cleaner</a>
+                                <a href="#">disinfectants</a>
+                                <a href="#">brushes, mops & buckets</a>
+                                <a href="#">cleaning cloths</a>
+                                <a href="#">sponges & scourers</a>
+                            </div>
+                        </div> 
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>baby & kids</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">baby feeding</a>
+                                <a href="#">baby wipes</a>
+                                <a href="#">diapers</a>
+                                <a href="#">kid's vitamins</a>
+                                <a href="#">games & toys</a>
+                                <a href="#">crayons & art kits</a>
+                                <a href="#">baby food</a>
+                            </div>
+                        </div> 
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>office supplies</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">general stationery</a>
+                                <a href="#">pens & pencils</a>
+                                <a href="#">notepads</a>
+                                <a href="#">printing papers</a>
+                                <a href="#">ink & toners</a>
+                                <a href="#">envelopes & labels</a>
+                                <a href="#">filling & storage</a>
+                                <a href="#">stationery sets</a>
+                                <a href="#">flip chart, white boards & projectors</a>
+                                <a href="#">office printing & business machines</a>
+                            </div>
+                        </div> 
+
+                        <!--<div class="dropdown">
+                            <button class="dropbtn" id="dropBtn"><span>others</span>
+                                <i class="fa fa-caret-down"></i><i class="fa fa-caret-right"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">matras, pillow & foam</a>
+                                <a href="#">mirrow</a>
+                                <a href="#">etc.</a>
+                            </div>
+                        </div>!-->       
+              
+                    
+            </div>
+            
+        </div>
+        </div>
+
+
+
+
+		<div class="product-main">
+		
+			<div class="product-ads">
+				<a href=""><img src="pic\ads-apple.png"></a>
+			</div>
+			
+			<div class="product-content">
+				<div class="product-img">
+					<img src="pic\fresh food1.jpg" title="Apples - Green x10">
+				</div>
+
+				<div class="product-details">
+					<div class="product-links">
+						<div><a href="">Home</a> &nbsp / &nbsp <a href="">Fresh Food</a> &nbsp / &nbsp <a href="">fruits</a></div>
+						<div class="product-name">Apples - Green x10</div>
+					</div>
+					<div class="price-cart-fav">
+						<div class="price-div"><span>price: </span> ₦1,650</div><div id="price">1650</div>
+						<div class="cart-fav">
+							<div class="btn-btn">
+								<button onclick="disappear()" id="cart">Add to Cart</button>
+								<div id="under-btn">
+									<button onclick="decrement()" id="miNus">-</button>
+									<button id="countBtn">0</button>
+									<button onclick="increment()" id="plus">+</button>
+								</div>
+							</div>
+							<div class="fav"><i class="fas fa-heart" onclick="addFav()"></i>&nbsp Add to Favourite</div>
+						</div>
+					</div>
+					<h3>Product Description</h3>
+					<div class="product-description">
+						Buy Apples - Green x10 on Adex Supermart. Fruits are very healthy and nutritious. You get the most health benefits from fruits when you eat them fresh. You'll find that fruits are low in fat and cholesterol so they are great for everyone, especially those who want to maintain a healthy balance diet. Most fruits also contain a lot of water and can help act as cleansers in your body. Some fruits are also known to be energy boosters so you may find people eating them just before they perform. Apples are delicious when eaten out of hand or served as an appetizer or dessert. They are also a crisp addition to salads, autumn pies, and a sweet complement to savory meat dishes. If you want to find the best price of apples in Nigeria, then this is the right place. At Supermart.ng, you can order online and get same-day delivery in Lagos. For those who don't know where to buy apples in Nigeria, you may check supermarkets near me and local shops in your neighbourhood but for convenience and peace of mind, it's better to shop online. It may be worthwhile also doing a search for grocery delivery near me to find it at a cheap rate. Friends may ask where can I get it or how much is it and once you've tried the service, you'll be able to answer all their questions and refer them to the number 1 online supermarket. Supermart.ng is the perfect site to do your grocery shopping - low prices and huge discounts always. Most products come with directions for how to use them but if the product is not branded or doesn't have any label or packaging, you can check online or ask friends for directions for use. Consumer goods products made by manufacturers will typically come with instructions for use; if you don't find this enclosed, exercise caution before using or consuming any product you're unfamiliar with. It is made by one of the most popular manufacturers for this product category and there are hundreds of distributors that supply it across supermarkets and markets in Lagos, Nigeria. If you want to know where to purchase it, the best place to check is an online retailer that you can order online from and have delivered to you at home. This is one of the top selling products in Nigeria and also one of the most famous brands. One of the first questions customers ask about a product is - how much does it cost? And the answer is - not a lot if you're buying online from Adex supermarket. With a good recipe, you'll be able to know how to prepare a great tasting dish with this. Whether its a family recipe or one developed by a renowned chef, there are so many possiblities to make something delicious and nutritious that will leave your guests licking their lips. As long as you know how to cook, it should be easy to make something nice in the kitchen. This is a time-tested ingredient so knowing how to make it shouldn't be a problem for you. Adding this as part of your regular meal plan can help you maintain a balanced diet. If you want to know the health benefits, check the ingredients and contents which will be stated on the packaging if available. Otherwise, you can do an online search to know more about it. For those concerned about weight loss, weight gain or burning excess fat, be sure to monitor the calories and cholesterol in your diet. You should eat foods that lower cholesterol and reduce the likelihood of high blood pressure and heart disease. High BP and diabetes are very common in this part of the world but they can be partly managed by reducing stress, eating less oily foods and having a generally healthy diet that is combined with regular exercise. Knowing the ingredients in your food is also important in order to be conscious of any adverse side effects on your health or immune system. The undisputed online retailer to get low prices and huge discounts always.
+					</div>
+				</div>
+			
+			</div>
+			<div class="product-info">
+				<hr>
+				<span>Product Information</span><hr class="hr2">
+				<div class="into2">
+					<div class="product-info-1">
+						<h4>Categories</h4>
+						<div class="product-info-11">
+							<div>fresh food</div>
+							<div>mega discount</div>
+						</div>
+					</div>
+
+					<div class="product-info-2">
+						<h4>Brand</h4>
+						<div class="product-info-11">
+							Generic
+						</div>
+					</div>
+				</div>
+
+				<div class="into2">
+					<div class="product-info-1">
+						<h4>Storage</h4>
+						<div class="product-info-11">
+							Store in a cool, dry place
+						</div>
+					</div>
+
+					<div class="product-info-2">
+						<h4>Country of Origin</h4>
+						<div class="product-info-11">
+							Nigeria
+						</div>
+					</div>
+				</div>
+
+				<div class="into2">
+					<div class="product-info-1">
+						<h4>Weight</h4>
+						<div class="product-info-11">
+							70 g
+						</div>
+					</div>
+
+					<div class="product-info-2">
+						<h4>Package Type</h4>
+						<div class="product-info-11">
+							Pack
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="using-product">
+				<h3>Using Product Information</h3>
+				<div>
+					While we go to great lengths to ensure product information is accurate, because products are constantly being reformulated, the product information, ingredients, nutrition/dietary/allergy information, directions for use, safety guides and other information pertaining to the contents, packaging and efficacy of the product may change occasionally. You should, therefore, check the label carefully prior to using any product. Adex is unable to accept liability for any inaccuracies or incorrect information contained on this site. This does not affect your statutory rights. If you have questions on any Adex-branded or non-branded products, you may contact Adex at service@adex supermarket. For all other products, you should contact the product manufacturer. This information is supplied for personal use only. It must not be reproduced in any way whatsoever without the prior consent of Supermart, nor without due.
+				</div>
+			</div>
+
+			<div class="related-product">Related Products</div>
+
+			<div class="grocery-product-img">
+
+				<div class="grocery-product" id="defaultOpen">
+					<div class="pro-details">
+						<a href=""><img src="pic\fruits1.jpg" title="Orange x6"></a>
+						<div class="pro-name"><div class="name"><a href=""> Orange x6</a></div> <div class="product-price">₦250<div id="price">250</div><i class="fas fa-heart" onclick="addFav()"></i></div></div>
+						<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+					</div>
+					<div class="pro-details">
+						<a href=""><img src="pic\fruits2.jpg" title="Coconut"></a>
+						<div class="pro-name"><div class="name"><a href=""> Coconut</a></div> <div class="product-price">₦350<div id="price">350</div><i class="fas fa-heart" onclick="addFav()"></i></div></div>
+						<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+					</div>
+					<div class="pro-details">
+						<a href=""><img src="pic\fruits3.jpg" title="Apple - Red x10"></a>
+						<div class="pro-name"><div class="name"><a href=""> Apple - Red x10</a></div> <div class="product-price">₦1,800<div id="price">1800</div><i class="fas fa-heart" onclick="addFav()"></i></div></div>
+						<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+					</div>
+					<div class="pro-details">
+						<a href=""><img src="pic\fruits4.jpg" title="Plum x6"></a>
+						<div class="pro-name"><div class="name"><a href=""> Plum x6</a></div> <div class="product-price">₦2,100<div id="price">2100</div><i class="fas fa-heart" onclick="addFav()"></i></div></div>
+						<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+					</div>
+					<div class="pro-details">
+						<a href=""><img src="pic\fruits5.jpg" title="Lemon x6"></a>
+						<div class="pro-name"><div class="name"><a href=""> Lemon x6</a></div> <div class="product-price">₦200<div id="price">200</div><i class="fas fa-heart" onclick="addFav()"></i></div></div>
+						<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+					</div>
+					<div class="pro-details">
+						<a href=""><img src="pic\fresh food5.jpg" title="Strawberry Pack"></a>
+						<div class="pro-name"><div class="name"><a href=""> Strawberry Pack</a></div> <div class="product-price">₦2,490<div id="price">2490</div><i class="fas fa-heart" onclick="addFav()"></i></div></div>
+						<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+					</div>
+				</div>
+
+
+			</div>
+		
+		</div>
+
+
+	<footer>
+        <div class="footer-row-1">
+            <img src="pic\ads8.png">
+        </div>
+        <div class="footer-row-2">
+            <div class="footer-col-1">
+                <h2>Company</h2>
+                <a href="">Home</a>
+                <a href="">FAQ</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div>      
+            <div class="footer-col-2">
+                <h2>Business</h2>
+                <a href="">Products</a>
+                <a href="">Press</a>
+                <a href="">Privacy</a>
+                <a href="">Policy</a>
+            </div>      
+            <div class="footer-col-3">
+                <div class="footer-img"><a href="grocery.html"><img src="pic\download-5.png"></a></div>
+                <div class="empty"></div>
+            </div>      
+            <div class="footer-col-4">
+                <h2>Help & Security</h2>
+                <a href="">Cookies</a>
+                <a href="">Terms</a>
+                <a href="">Condition</a>
+                <a href="">Corporate Purchase</a>
+            </div>      
+            <div class="footer-col-5">
+                <h2>Quick Links</h2>
+                <a href="">E-Wallet</a>
+                <a href="">Jobs</a>
+                <a href="">Blogs</a>
+                <a href="">Offers</a>
+            </div>
+        </div>
+        <div class="footer-row-3">
+            <div class="social">
+                <span>Follow Us:</span>
+                <a href="#"><i class="fab fa-facebook-square"></i><span>facebook</span></a>
+                <a href="#"><i class=" fab fa-twitter"></i><span>twitter</span></a>
+                <a href="#"><i class="fab fa-whatsapp"></i><span>whatsApp</span></a>
+                <a href="#"><i class="fab fa-instagram"></i><span>instagram</span></a>
+            </div>
+            <div class="copyright">
+                <i class="fas fa-copyright"></i>copyright <sup> 2022</sup> Adex store. &nbsp; All Right Reserved &nbsp;
+            </div>
+        </div>      
+    </footer>
+
+<script type="text/javascript" src="grocery.js"></script>
+</body>
+</html>
+
+
+
+		
