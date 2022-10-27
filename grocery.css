@@ -828,6 +828,47 @@ li:hover{
 
 
 
+.cookies {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 700px;
+  padding: 15px;
+  background-color: slategray;
+  justify-content: center;
+}
+
+
+#demo {
+  padding-right: 15px;
+  margin: auto 0px;
+  color: white;
+}
+
+.cookies-btn {
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*  This is where the mobile screen Navbar css code started for every pages*/
@@ -2279,9 +2320,7 @@ button.tooltip .tooltiptext::after {
   .topnav.responsive {
     position: fixed;
     background-color: darkcyan;
-    /*min-height: 100vh;*/
     height: 150px;
-    /*min-height: -webkit-fill-available;*/
     z-index: ;
     opacity: ;
     width: 100%;
