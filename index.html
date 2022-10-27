@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="grocery.css">
 	<title>Adex Supermarket</title>
 </head>
-<body>
+<body onload="checkCookies()">
 
 		<div class="topnav" id="myTopnav">
             <div class="nav-container">
@@ -147,7 +147,7 @@
 						</div>
 						<div class="user-list3">
 							<i class="fas fa-user"></i>
-							<span><a href="login.html">login</a> / <a href="registration.html">register</a> </span>
+							<span><a href="login.html" target="_blank">login</a> / <a href="registration.html" target="_blank">register</a> </span>
 						</div>
 					</div>
 
@@ -910,6 +910,8 @@
 				</h4>
 			</div>
 
+	<div class="cookies" id="cookies"><div id="demo"></div><a href="#"><button class="cookies-btn" id="cookiesBtn">OK</button></a></div>
+
 
 
 		
@@ -956,7 +958,7 @@
 			<div class="social">
 				<span>Follow Us:</span>
 				<a href="#"><i class="fab fa-facebook-square"></i><span>facebook</span></a>
-				<a href="#"><i class=" fab fa-twitter"></i><span>twitter</span></a>
+				<a href="#"><i class="fab fa-twitter"></i><span>twitter</span></a>
 				<a href="#"><i class="fab fa-whatsapp"></i><span>whatsApp</span></a>
 				<a href="#"><i class="fab fa-instagram"></i><span>instagram</span></a>
 			</div>
