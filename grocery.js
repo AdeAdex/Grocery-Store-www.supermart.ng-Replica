@@ -1,4 +1,24 @@
+function checkCookies() {
+  let text = "";
 
+  if (navigator.cookieEnabled == true) {
+    text = "This website uses Cookies to enable us serve you better and help us provide you with a better website, by enabling us to monitor which pages you find useful and which you do not. Will you like to continue allowing the Cookies?";
+  } else {
+     text = "Cookies are not enabled.";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+
+
+let cookiesbtn = document.getElementById("cookiesBtn");
+cookiesbtn.addEventListener("click", closeit);
+let cookiescontainer = document.getElementById("cookies");
+
+function closeit() {
+  cookiescontainer.innerHTML = null;
+  cookiescontainer.style.width = "0";
+  cookiescontainer.style.padding = "0";
+}
 
 
 function rmv() {
