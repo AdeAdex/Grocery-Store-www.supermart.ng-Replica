@@ -147,7 +147,7 @@
                         </div>
                         <div class="user-list3">
                             <i class="fas fa-user"></i>
-                            <span><a href="login.html">login</a> / <a href="registration.html">register</a> </span>
+                            <span><a href="login.html" target="_blank">login</a> / <a href="registration.html" target="_blank">register</a> </span>
                         </div>
                     </div>
 
@@ -536,14 +536,14 @@
 						<div class="price-div"><span>price: </span> ₦1,650</div><div id="price">1650</div>
 						<div class="cart-fav">
 							<div class="btn-btn">
-								<button onclick="disappear()" id="cart">Add to Cart</button>
+								<button id="cart">Add to Cart</button>
 								<div id="under-btn">
-									<button onclick="decrement()" id="miNus">-</button>
+									<button id="miNus">-</button>
 									<button id="countBtn">0</button>
-									<button onclick="increment()" id="plus">+</button>
+									<button id="plus">+</button>
 								</div>
 							</div>
-							<div class="fav"><i class="fas fa-heart" onclick="addFav()"></i>&nbsp Add to Favourite</div>
+							<div class="fav"><i class="fas fa-heart" id="favorite"></i>&nbsp Add to Favourite</div>
 						</div>
 					</div>
 					<h3>Product Description</h3>
@@ -620,33 +620,33 @@
 				<div class="grocery-product" id="defaultOpen">
 					<div class="pro-details">
 						<a href=""><img src="pic\fruits1.jpg" title="Orange x6"></a>
-						<div class="pro-name"><div class="name"><a href=""> Orange x6</a></div> <div class="product-price">₦250<div id="price">250</div><i class="fas fa-heart" onclick="addFav()"></i></div></div>
-						<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+						<div class="pro-name"><div class="name"><a href=""> Orange x6</a></div> <div class="product-price">₦250<div id="price">250</div><i class="fas fa-heart" id="favorite"></i></div></div>
+						<div class="pro-btn"><button id="cart">Add to Cart</button><div id="under-btn"><button id="miNus">-</button><button id="countBtn">0</button><button id="plus">+</button></div></div>
 					</div>
 					<div class="pro-details">
 						<a href=""><img src="pic\fruits2.jpg" title="Coconut"></a>
-						<div class="pro-name"><div class="name"><a href=""> Coconut</a></div> <div class="product-price">₦350<div id="price">350</div><i class="fas fa-heart" onclick="addFav()"></i></div></div>
-						<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+						<div class="pro-name"><div class="name"><a href=""> Coconut</a></div> <div class="product-price">₦350<div id="price">350</div><i class="fas fa-heart" id="favorite"></i></div></div>
+						<div class="pro-btn"><button id="cart">Add to Cart</button><div id="under-btn"><button id="miNus">-</button><button id="countBtn">0</button><button id="plus">+</button></div></div>
 					</div>
 					<div class="pro-details">
 						<a href=""><img src="pic\fruits3.jpg" title="Apple - Red x10"></a>
-						<div class="pro-name"><div class="name"><a href=""> Apple - Red x10</a></div> <div class="product-price">₦1,800<div id="price">1800</div><i class="fas fa-heart" onclick="addFav()"></i></div></div>
-						<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+						<div class="pro-name"><div class="name"><a href=""> Apple - Red x10</a></div> <div class="product-price">₦1,800<div id="price">1800</div><i class="fas fa-heart" id="favorite"></i></div></div>
+						<div class="pro-btn"><button id="cart">Add to Cart</button><div id="under-btn"><button id="miNus">-</button><button id="countBtn">0</button><button id="plus">+</button></div></div>
 					</div>
 					<div class="pro-details">
 						<a href=""><img src="pic\fruits4.jpg" title="Plum x6"></a>
-						<div class="pro-name"><div class="name"><a href=""> Plum x6</a></div> <div class="product-price">₦2,100<div id="price">2100</div><i class="fas fa-heart" onclick="addFav()"></i></div></div>
-						<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+						<div class="pro-name"><div class="name"><a href=""> Plum x6</a></div> <div class="product-price">₦2,100<div id="price">2100</div><i class="fas fa-heart" id="favorite"></i></div></div>
+						<div class="pro-btn"><button id="cart">Add to Cart</button><div id="under-btn"><button id="miNus">-</button><button id="countBtn">0</button><button id="plus">+</button></div></div>
 					</div>
 					<div class="pro-details">
 						<a href=""><img src="pic\fruits5.jpg" title="Lemon x6"></a>
-						<div class="pro-name"><div class="name"><a href=""> Lemon x6</a></div> <div class="product-price">₦200<div id="price">200</div><i class="fas fa-heart" onclick="addFav()"></i></div></div>
-						<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+						<div class="pro-name"><div class="name"><a href=""> Lemon x6</a></div> <div class="product-price">₦200<div id="price">200</div><i class="fas fa-heart" id="favorite"></i></div></div>
+						<div class="pro-btn"><button id="cart">Add to Cart</button><div id="under-btn"><button id="miNus">-</button><button id="countBtn">0</button><button id="plus">+</button></div></div>
 					</div>
 					<div class="pro-details">
 						<a href=""><img src="pic\fresh food5.jpg" title="Strawberry Pack"></a>
-						<div class="pro-name"><div class="name"><a href=""> Strawberry Pack</a></div> <div class="product-price">₦2,490<div id="price">2490</div><i class="fas fa-heart" onclick="addFav()"></i></div></div>
-						<div class="pro-btn"><button onclick="disappear()" id="cart">Add to Cart</button><div id="under-btn"><button onclick="decrement()" id="miNus">-</button><button id="countBtn">0</button><button onclick="increment()" id="plus">+</button></div></div>
+						<div class="pro-name"><div class="name"><a href=""> Strawberry Pack</a></div> <div class="product-price">₦2,490<div id="price">2490</div><i class="fas fa-heart" id="favorite"></i></div></div>
+						<div class="pro-btn"><button id="cart">Add to Cart</button><div id="under-btn"><button id="miNus">-</button><button id="countBtn">0</button><button id="plus">+</button></div></div>
 					</div>
 				</div>
 
