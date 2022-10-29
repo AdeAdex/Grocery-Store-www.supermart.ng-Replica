@@ -30,22 +30,22 @@ function rmv() {
 
 
 let input = document.getElementById("search");
-//get list of value
 let list = document.querySelectorAll(".list li");
-
-//function search on the list.
 function search (){
   for(let i = 0; i < list.length; i += 1){
-   //check if the element contains the value of the input
    if(list[i].innerText.toLowerCase().includes(input.value.toLowerCase())){
      list[i].style.display = "block";
    }else{
      list[i].style.display = "none";
    }
   }
-}
 
-//to the change run search.
+  if (input.value.toLowerCase() === "") {
+    document.getElementById("listThis").style.display = "none";
+  } else {
+    document.getElementById("listThis").style.display = "block";
+  }
+}
 input.addEventListener('input', search);
 
 
@@ -157,6 +157,8 @@ function showSlides2(n) {
 
 
 let counter = 0;
+let fav = document.getElementById("favorite");
+fav.addEventListener("click", addFav);
 function addFav() {
   let increase = document.getElementById("fav");
   counter+= 1;
@@ -165,41 +167,65 @@ function addFav() {
 
 
 
-  let count = 0;
-  const amount = document.getElementById("totalAmount");
-  const price = parseInt(document.getElementById("price").innerHTML);
- function increment() {
-    count+=1;
-    document.getElementById("basket").innerHTML = count;
-    document.getElementById("countBtn").innerHTML = count;
-    amount.innerHTML = parseInt(amount.innerHTML) + price;
+let count = 0;
+const amount = document.getElementById("totalAmount");
+const price = parseInt(document.getElementById("price").innerHTML);
+let increasecount = document.getElementById("plus");
+increasecount.addEventListener("click", increment)
+function increment() {
+  count+=1;
+  document.getElementById("basket").innerHTML = count;
+  document.getElementById("countBtn").innerHTML = count;
+  amount.innerHTML = parseInt(amount.innerHTML) + price;
 }
 
 
-    
+
+
+let decreasecount = document.getElementById("miNus");
+decreasecount.addEventListener("click", decrement)
 function decrement() {
-    if (document.getElementById("countBtn").innerHTML == 0) {
-      document.getElementById("under-btn").style.display = "none";
-      document.getElementById("cart").style.display = "block";
-    }else if (count > 0) {
-      count-=1;
-      document.getElementById("under-btn").style.display = "block";
-    }else {
-            
-    }
-    amount.innerHTML = parseInt(amount.innerHTML) - price;
-    document.getElementById("basket").innerHTML = count;
-    document.getElementById("countBtn").innerHTML = count;  
+  if (document.getElementById("countBtn").innerHTML == 0) {
+    document.getElementById("under-btn").style.display = "none";
+    document.getElementById("cart").style.display = "block";
+  }else if (count > 0) {
+    count-=1;
+    document.getElementById("under-btn").style.display = "block";
+  }else {
+          
+  }
+  amount.innerHTML = parseInt(amount.innerHTML) - price;
+  document.getElementById("basket").innerHTML = count;
+  document.getElementById("countBtn").innerHTML = count;  
 
-    if (amount.innerHTML < 0) {
-      return amount.innerHTML = 0;      
-    }
+  if (amount.innerHTML < 0) {
+    return amount.innerHTML = 0;      
+  }
 }
 
-
-
-
+const yhea = document.getElementById("deletes");
+let cart = document.getElementById("cart");
 function disappear() {
+  document.getElementById("basketContent").innerText = "";
+  const para = document.createElement("p");
+  const myBas = document.getElementById("basketContent");
+  yhea.style.display = "flex";
+  para.appendChild(yhea);
+  myBas.appendChild(para);
+  cart.style.display = "none";
+  if (cart.style.display === "none") {
+    document.getElementById("under-btn").style.display = "block";
+  } else{
+      document.getElementById("under-btn").style.display = "none";
+    }
+  }
+cart.addEventListener("click", disappear);
+
+
+ /*let cartcart = document.getElementById("cart");
+ dropdownAmount = 0;
+function disappear() {
+  let cart = document.getElementsByClassName("cart-class")
   document.getElementById("basketContent").innerText = "";
   const para = document.createElement("p");
   const myBas = document.getElementById("basketContent");
@@ -207,21 +233,29 @@ function disappear() {
   yhea.style.display = "flex";
   para.appendChild(yhea);
   myBas.appendChild(para);
-  let remove = document.getElementById("cart");
-  remove.style.display = "none";
-  if (remove.style.display = "none") {
+  //cart.style.display = "none";
+  for (i = 0; i < cart.length; i++) {
+    cart[i].style.display = "none";
+    if (cart[i].style.display === "none") {
         document.getElementById("under-btn").style.display = "block";
-  }else{
-    document.getElementById("under-btn").style.display = "none";
+    }else{
+      document.getElementById("under-btn").style.display = "none";
+    }
   }
+  const openDropdowns = cart[i];
+    if (openDropdowns.classList.contains('showme')) {
+          openDropdowns.classList.remove('showme');
+    }
+    dropdownAmounts = 1;
 }
+cartcart.addEventListener("click", disappear);*/
 
 
 
-
+let clearit = document.getElementById("clearIt");
+clearit.addEventListener("click", degenerate);
 function degenerate() {
-    let div = document.getElementById("deletes");
-    div.remove();
+    yhea.remove();
     if (document.getElementById("basketContent").innerText == "") {
       document.getElementById("basketContent").innerText = "It looks like you've not added any item here";
     }else {
