@@ -830,7 +830,7 @@ li:hover{
   display: flex;
   position: fixed;
   width: 100%;
-  top: 700px;
+  bottom: 0;
   padding: 15px;
   background-color: slategray;
   justify-content: center;
